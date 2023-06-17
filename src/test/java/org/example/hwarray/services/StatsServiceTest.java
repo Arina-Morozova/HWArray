@@ -9,10 +9,10 @@ public class StatsServiceTest {
     public void shouldFindSumSales() {
         StatsService service = new StatsService();
 
-        int[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expected = 180;
-        int actual = service.sumSales(sales);
+        long expected = 180;
+        long actual = service.sumSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -21,10 +21,10 @@ public class StatsServiceTest {
     public void shouldFindMiddleValueSales() {
         StatsService service = new StatsService();
 
-        int[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expected = 15;
-        int actual = service.middleValueSales(sales);
+        long expected = 15;
+        long actual = service.middleValueSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -33,10 +33,10 @@ public class StatsServiceTest {
     public void shouldFindMaxSales() {
         StatsService service = new StatsService();
 
-        int[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expected = 8;
-        int actual = service.maxSales(sales);
+        long expected = 8;
+        long actual = service.maxSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -45,10 +45,10 @@ public class StatsServiceTest {
     public void shouldFindMinSales() {
         StatsService service = new StatsService();
 
-        int[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expected = 9;
-        int actual = service.minSales(sales);
+        long expected = 9;
+        long actual = service.minSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -57,10 +57,10 @@ public class StatsServiceTest {
     public void shouldFindBelowMiddleValueSales() {
         StatsService service = new StatsService();
 
-        int[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expected = 5;
-        int actual = service.belowMiddleValueSales(sales);
+        long expected = 5;
+        long actual = service.belowMiddleValueSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -69,10 +69,10 @@ public class StatsServiceTest {
     public void shouldFindHigherMiddleValueSales() {
         StatsService service = new StatsService();
 
-        int[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
 
-        int expected = 5;
-        int actual = service.higherMiddleValueSales(sales);
+        long expected = 5;
+        long actual = service.higherMiddleValueSales(sales);
 
         Assertions.assertEquals(expected, actual);
     }

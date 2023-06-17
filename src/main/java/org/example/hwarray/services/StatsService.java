@@ -3,8 +3,8 @@ package org.example.hwarray.services;
 public class StatsService {
 
 
-    public int sumSales(int[] sales) {
-        int sum = 0;
+    public long sumSales(long[] sales) {
+        long sum = 0;
 
         for (int i = 0; i < sales.length; i++) {
             sum = sum + sales[i];
@@ -13,14 +13,14 @@ public class StatsService {
     }
 
 
-    public int middleValueSales(int[] sales) {
-        int sum = sumSales(sales);
-        int mid = sum / sales.length;
+    public long middleValueSales(long[] sales) {
+        long sum = sumSales(sales);
+        long mid = sum / sales.length;
         return mid;
     }
 
 
-    public int maxSales(int[] sales) {
+    public int maxSales(long[] sales) {
         int maxMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
@@ -32,7 +32,7 @@ public class StatsService {
     }
 
 
-    public int minSales(int[] sales) {
+    public int minSales(long[] sales) {
         int minMonth = 0; // номер месяца с минимальными продажами среди просмотренных ранее
 
         for (int i = 0; i < sales.length; i++) {
@@ -44,28 +44,28 @@ public class StatsService {
     }
 
 
-    public int belowMiddleValueSales(int[] sales) {
-       int mid = middleValueSales(sales);
-       int belowMid = 0;
+    public int belowMiddleValueSales(long[] sales) {
+        long mid = middleValueSales(sales);
+        int belowMidMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] < mid) {
-                belowMid++;
+                belowMidMonth++;
             }
         }
-        return belowMid;
+        return belowMidMonth;
     }
 
 
-    public int higherMiddleValueSales(int[] sales) {
-        int mid = middleValueSales(sales);
-        int higherMid = 0;
+    public int higherMiddleValueSales(long[] sales) {
+        long mid = middleValueSales(sales);
+        int higherMidMonth = 0;
 
         for (int i = 0; i < sales.length; i++) {
             if (sales[i] > mid) {
-                higherMid++;
+                higherMidMonth++;
             }
         }
-        return higherMid;
+        return higherMidMonth;
     }
 }
