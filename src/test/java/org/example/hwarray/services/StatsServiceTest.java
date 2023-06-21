@@ -9,7 +9,7 @@ public class StatsServiceTest {
     public void shouldFindSumSales() {
         StatsService service = new StatsService();
 
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 180;
         long actual = service.sumSales(sales);
@@ -21,7 +21,7 @@ public class StatsServiceTest {
     public void shouldFindMiddleValueSales() {
         StatsService service = new StatsService();
 
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 15;
         long actual = service.middleValueSales(sales);
@@ -33,7 +33,7 @@ public class StatsServiceTest {
     public void shouldFindMaxSales() {
         StatsService service = new StatsService();
 
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 8;
         long actual = service.maxSales(sales);
@@ -45,7 +45,7 @@ public class StatsServiceTest {
     public void shouldFindMinSales() {
         StatsService service = new StatsService();
 
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 9;
         long actual = service.minSales(sales);
@@ -57,7 +57,7 @@ public class StatsServiceTest {
     public void shouldFindBelowMiddleValueSales() {
         StatsService service = new StatsService();
 
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 5;
         long actual = service.belowMiddleValueSales(sales);
@@ -69,7 +69,7 @@ public class StatsServiceTest {
     public void shouldFindHigherMiddleValueSales() {
         StatsService service = new StatsService();
 
-        long[] sales = { 8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18 };
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         long expected = 5;
         long actual = service.higherMiddleValueSales(sales);

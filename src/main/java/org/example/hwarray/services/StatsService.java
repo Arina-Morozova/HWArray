@@ -8,7 +8,7 @@ public class StatsService {
 
         for (int i = 0; i < sales.length; i++) {
             sum = sum + sales[i];
-            }
+        }
         return sum;
     }
 
